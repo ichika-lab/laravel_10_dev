@@ -46,7 +46,8 @@ services:
             - 16379:6379
 
     phpmyadmin:
-        image: phpmyadmin/phpmyadmin:5
+        # image: phpmyadmin/phpmyadmin:5
+        image: phpmyadmin:latest
         container_name: phpmyadmin
         depends_on:
         - l10dev-mysql
