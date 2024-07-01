@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Qiita風記事投稿サービス</title>
         <!-- cssをインポート -->
-        {{-- <link href="{{ mix('css/app.css') }}" rel="stylesheet" type="text/css"> --}}
+        <link href="{{ mix('css/app.css') }}" rel="stylesheet" type="text/css">
 
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
