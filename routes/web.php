@@ -17,7 +17,7 @@ use App\Http\Controllers\TaskController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('logout');
 
 // Route::get('/list', function () {
 //     return view('welcome');
@@ -26,3 +26,10 @@ Route::get('/', function () {
 Route::get('/list', [TodoListController::class, 'index']);
 
 Route::resource('/tasks', TaskController::class);
+
+Route::get('/top', function () {
+    return view('top'); // この行を編集
+});
+
+// この行を追加
+Route::get('/home', 'HomeController@index')->name('home');
