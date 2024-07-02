@@ -16,6 +16,20 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                 </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    {{-- <x-nav-link :href="route('tweet.index')" :active="request()->routeIs('tweet.index')"> --}}
+                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                        {{ __('「一覧」') }}
+                    </x-nav-link>
+                </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    {{-- <x-nav-link :href="route('tweet.create')" :active="request()->routeIs('tweet.create')"> --}}
+                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                        {{ __('作成') }}
+                    </x-nav-link>
+                </div>
             </div>
 
             <!-- Settings Dropdown -->
@@ -70,6 +84,20 @@
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
+        </div>
+
+        <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+            {{-- <x-nav-link :href="route('tweet.index')" :active="request()->routeIs('tweet.index')"> --}}
+            <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                {{ __('「一覧」') }}
+            </x-nav-link>
+        </div>
+
+        <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+            {{-- <x-nav-link :href="route('tweet.create')" :active="request()->routeIs('tweet.create')"> --}}
+            <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                {{ __('作成') }}
+            </x-nav-link>
         </div>
 
         <!-- Responsive Settings Options -->
