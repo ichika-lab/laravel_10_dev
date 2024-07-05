@@ -41,3 +41,5 @@ Route::get('/top', function () {
 
 // この行を追加
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/user_list', [ProfileController::class, 'index'])->name('profile.index');

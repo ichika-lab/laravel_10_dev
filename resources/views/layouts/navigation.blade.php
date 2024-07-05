@@ -30,6 +30,11 @@
                         {{ __('作成') }}
                     </x-nav-link>
                 </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('profile.index')" :active="request()->routeIs('profile.index')">
+                        {{ __('ユーザ管理') }}
+                    </x-nav-link>
+                </div>
             </div>
 
             <!-- Settings Dropdown -->
@@ -52,6 +57,16 @@
                             {{ __('Profile') }}
                         </x-dropdown-link>
 
+                        <!-- Authentication -->
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+
+                            <x-dropdown-link :href="route('logout')"
+                                    onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                                {{ __('Log Out') }}
+                            </x-dropdown-link>
+                        </form>
                         <!-- Authentication -->
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
