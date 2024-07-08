@@ -46,7 +46,7 @@
                     @slot('xxx')
                         @component('components.button',[
                             'color' => 'green',
-                            'route' => 'register'
+                            'route' => 'create_new_user_by_admin'
                         ])
                             @slot('name')
                                 <i class="fa-solid fa-plus"></i>
