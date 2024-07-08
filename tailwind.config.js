@@ -1,6 +1,11 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
 import forms from '@tailwindcss/forms';
 
+const {
+    iconsPlugin,
+    getIconCollections,
+} = require("@egoist/tailwindcss-icons");
+
 /** @type {import('tailwindcss').Config} */
 export default {
     content: [
@@ -17,5 +22,11 @@ export default {
         },
     },
 
-    plugins: [forms],
+    plugins: [forms,
+        iconsPlugin({
+            // 利用したい icon collection を利用する
+            // https://icones.js.org/
+            collections: getIconCollections(["tabler", "lucide"]),
+        }),
+    ],
 };

@@ -44,7 +44,14 @@
                         </tbody>
                     </table>
                     @slot('xxx')
-                        slotディレクティブの中身
+                        @component('components.button',[
+                            'color' => 'green',
+                            'route' => 'register'
+                        ])
+                            @slot('name')
+                                <i class="fa-solid fa-plus"></i>
+                            @endslot
+                        @endcomponent
                     @endslot
                 @endcomponent
             </div>
