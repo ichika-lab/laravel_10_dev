@@ -14,6 +14,7 @@ class TaskController extends Controller
     public function index()
     {
         // $tasks = Task::all();
+        \sayHelloClass::console_log('xxx 2024-07-05 xxx');
         $tasks = Task::where('status', false)->get();
         return view('tasks.index', compact('tasks'));
     }
