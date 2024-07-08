@@ -4,7 +4,7 @@ namespace app\Library;
 
 class sayHelloClass
 {
-    public static function cnosole_log($data)
+    public static function console_log($data)
     {
         echo '<script>';
         echo 'console.log('.json_encode($data).')';
