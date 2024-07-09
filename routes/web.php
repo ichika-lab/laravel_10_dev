@@ -31,7 +31,7 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
-Route::get('/list', [TodoListController::class, 'index']);
+Route::get('/list', [TodoListController::class, 'index'])->name('list');
 
 Route::resource('/tasks', TaskController::class);
 

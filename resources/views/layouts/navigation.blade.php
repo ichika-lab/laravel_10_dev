@@ -21,15 +21,15 @@
 
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     {{-- <x-nav-link :href="route('tweet.index')" :active="request()->routeIs('tweet.index')"> --}}
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                    <x-nav-link :href="route('list')" :active="request()->routeIs('list')">
                         {{ __('「一覧」') }}
                     </x-nav-link>
                 </div>
 
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     {{-- <x-nav-link :href="route('tweet.create')" :active="request()->routeIs('tweet.create')"> --}}
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('作成') }}
+                    <x-nav-link :href="route('tasks.index')" :active="request()->routeIs('tasks.index')">
+                        {{ __('タスク') }}
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">

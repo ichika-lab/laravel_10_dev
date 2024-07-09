@@ -27,14 +27,14 @@
                                 <td class="border-gray-200 border-t-2">{{$user->email}}</td>
                                 <td>
                                 @include('components.button',[
-                                    'color' => 'green',
+                                    'type' => 'green',
                                     'name' => '編集',
                                     'route' => 'profile.edit'
                                 ])
                                 </td>
                                 <td>
                                 @include('components.button',[
-                                    'color' => 'red',
+                                    'type' => 'red',
                                     'name' => '削除',
                                     'route' => 'profile.edit'
                                 ])
@@ -45,7 +45,7 @@
                     </table>
                     @slot('xxx')
                         @component('components.button',[
-                            'color' => 'green',
+                            'type' => 'gray',
                             'route' => 'create_new_user_by_admin'
                         ])
                             @slot('name')
